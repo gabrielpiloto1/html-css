@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou de Zoom in/Zoom out</p>
+    <picture>
+        <!--IMPORTANTE: o source deve ser posto em ordem, no caso abaixo foi posto em ordem decrescente, porem, (acho) depende se esta usando MIN ou MAX setado no width
+        -->
+<source media="(max-width: 750px)" srcset="Imagens/foto-p.png">
+<source media="(max-width: 1050px)" srcset="Imagens/foto-m.png">
+<img src="Imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio no HTML5</p>
+    <!--Outra maneira de adicionar audio, apaga o src da tag e poe entre audio e /audio os 3 formatos de audio citados acima. obs: é importante a sequencia e por uma mensagem caso o audio nao abra pro cliente mesmo com os 3 formatos postos.-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/htmlaudio.mp3" type="audio/mpeg">
+        <source src="midia/htmlaudio.ogg" type="audio/ogg">
+        <source src="midia/htmlaudio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não conseguiu reproduzir o áudio <a href="midia/htmlaudio.mp3" target="_blank" rel="internal">Clique aqui para fazer o download do audio.</a></p>
+        
+    </audio>
+    <br>
+    <!--Usar sempre arquivos MP3(MPEG)/OGG/WAV, pois eles ja são integrados no html5 facilitando a inclusão do audio-->
+    <audio src="midia/htmlaudio.mp3" controls></audio>
+</body>
+</html>

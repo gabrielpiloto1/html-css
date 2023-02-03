@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+TUDO QUE COLOQUEI EM HTML COMO ID = EM CSS É #
+E TUDO QUE EM HTML É CLASS = EM CSS É.
+*/
+
+body {
+background-color:#69bdee;
+font-family: cudeletra;
+}
+h1{
+    color: #0E0270;
+}
+h2{
+    color: #0112B3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+    background-color: #0112B3;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    text-indent: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.basic {
+    color: rgb(0, 100, 38);
+}
+.intermediate {
+    color: rgb(243, 207, 6);
+}
+.advanced {
+    color: rgb(247, 30, 15);
+}
+.destaque {
+    background-color: rgba(250, 128, 114, 0.74);
+}

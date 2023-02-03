@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Videos no HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente no HTML5 </h1>
+    <p>Esse video está hospedado no meu própio servidor</p>
+    <!-- DICA: colocar todos os tipos: mp4 ogv webm... pois assim voce tera mais chance de compatibilidade com o navegador do cliente.-->
+    <video width="560" poster="imagens/brasil.png" controls autoplay muted>
+        <source src="midia/video.webm.webm" type="video/webm">
+        <source src="midia/video.mkv.mkv" type="video/mkv">
+        <source src="midia/video.ogv.ogv" type="video/ogv">
+        <source src="midia/video.mp4.mp4" type="video/mp4">
+        <p>Seu navegador nâo tem compatibilidade com o video faça o download <a href="midia/video.mkv.mkv">aqui.</a></p>
+    </video>
+    <h1>Inserindo videos do youtube</h1>
+    <!--É mais inteligente usar videos hospedados em sites como o Youtube, sendo assim, não é usado banda do seu contrato de hospedagem do site, ou seja, não há custos adicionais por conta do video no seu website. Outra opção pra usar videos ja hospedados é o Vimeo.com, eles oferecem também a opção paga que voce pode privar os seus videos para o público.
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h1>Colocando videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/443739?h=7348fce018&color=c9ff23" width="560" height="370" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

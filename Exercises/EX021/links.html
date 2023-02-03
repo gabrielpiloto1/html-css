@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+/*
+REFORÇANDO O CONTEUDO NO CSS:
+# = id
+. = class
+: = pseudo-classes
+:: = pseudo-element
+> = children
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+Configurando os link: cor, sublinhado, tamanho, negrito etc...
+*/
+a{
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+Configurando os links que ja foram visitados
+*/
+a:visited{
+    color: darkgoldenrod;
+}
+/* 
+Quando o link é clicado
+*/
+a:active{
+    color: red;
+}
+/*
+Configurando os links quando o mouse esta sobre eles.
+*/
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/*
+Tambem posso estilizar pseudo-elementos usando :: 
+posso estilizar "individualmente" classificando o pseudo-elemento
+*/
+a::after{
+    content: '←';
+}
+a::before{
+    content: '→';
+}
+/*
+Assim consigo customizar um pseudo-elemento classificado ->
+*/
+.especial::after {
+    content: '<--';
+}
+.especial::before{
+    content: '-->';
+}
+.especial{
+    background-color: rgba(250, 128, 114, 0.726);
+}
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external" class="especial">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">WebSite do Curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDB2A1;
+    color: #001E1E;
+}
+
+header{
+    font-size: 1.5em;
+}
+
+nav{
+    box-shadow: 2px 3px 5px #59362E;
+    height: 20px;
+    width:490px ;
+    font-size: 0.6em;
+    background-color: #f58b739d ;
+    text-align: left;
+    
+}
+nav > a:hover{
+    color: #FDB2A1;
+}
+nav > a{
+    justify-content: center;
+    padding:auto;
+    color: #001E1E;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 30px;
+}
+.indice::after{
+    content: '|';
+}
+.maltanews{
+    justify-content: center;
+    font-size: 1.4em;
+text-align: center;
+       
+    
+    background-color:#f55936c2 ;
+}
+.manchete{
+    box-shadow: 2px 3px 5px #59362E;
+        padding-left: 7px;
+
+        
+        background-color:#f55936c2 ;
+    
+}
+section{
+    
+    padding: 1px 5px 10px 5px;
+    border-radius: 11px 2px;
+    width: auto;
+    background-color: aliceblue;
+}
+p{
+    text-indent: 25px;
+}
+article > aside{
+    font-size: 0.6em;
+    text-align: right;
+}
+.outside {
+    margin: 1em;
+    outline-style: dotted;
+}
+footer{
+ background-color:#f5593680 ;
+    color: #001E1E;
+    text-align: center;
+}
+#bola{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    background-color: white;
+    margin: auto;
+    border-style: dashed;
+    border-color: #59362E;
+    
+}
